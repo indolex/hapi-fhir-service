@@ -1,7 +1,7 @@
 version: "3"
 services:
   hapi-fhir-service:
-    image: hapi-fhir-service
+    image: local/hapi-fhir-service:dev
     restart: on-failure
     environment:
       SPRING_DATASOURCE_URL: 'jdbc:postgresql://hapi-fhir-postgres:5432/postgres'
